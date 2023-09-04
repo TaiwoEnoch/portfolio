@@ -1,0 +1,24 @@
+.footer__socials {
+  width: 100%;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 5rem;
+  align-items: center;
+  background: var(--color-bg-primary);
+}
+
+.footer__socials::before,
+.footer__socials::after {
+  content: '';
+  width: 10px;
+  height: 3rem;
+  background: var(--color-primary);
+}
+
+/* *************** Media Queries (Medium Devices) ************ */
+@media screen and (max-width: 375px) {
+  .footer__socials {
+    gap: 3.8rem;
+    font-size: 1.5rem;
+  }
+}

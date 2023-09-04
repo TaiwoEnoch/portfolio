@@ -124,13 +124,13 @@
   .responsive {
     padding-top: 10rem;
   }
-}
+} */
 
 @media screen and (max-width: 912px) {
   .responsive {
-    padding-top: 2rem;
+    padding-top: 10rem;
   }
-} */
+}
 
 @media screen and (max-width: 414px) {
   .responsive {

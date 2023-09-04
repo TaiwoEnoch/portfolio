@@ -1,14 +1,13 @@
 import React from 'react';
 import './testimonials.css';
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import AVTR1 from '../../assets/RitAVT1.jpg';
 import AVTR2 from '../../assets/OlAVT.jpg';
 import AVTR3 from '../../assets/EDAVT.jpg';
 import AVTR4 from '../../assets/DIAVT.jpg';
 
 // import Swiper core and required modules
-import { Pagination } from 'swiper/modules';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,7 +18,7 @@ const data = [
     avatar: AVTR1,
     name: 'Ritika Rawat',
     review: `Working closely with Taiwo Enoch has been a truly enriching experience. Throughout our collaboration, I've had the opportunity to witness Taiwo's exceptional talent and dedication as a software engineer. Taiwo's commitment to delivering high-quality code and solutions is evident in every project we've undertaken together.
-    Taiwo Enoch is a highly skilled and dedicated software engineer who consistently delivers outstanding results. His technical prowess, collaborative nature, and enthusiasm for staying at the forefront of the field make him a valuable asset to any software development project. I wholeheartedly recommend Taiwo to anyone in need of a software engineer who can bring both expertise and a positive attitude to the team. 🙌`
+    Taiwo Enoch is a highly skilled and dedicated software engineer who consistently delivers outstanding results. His technical prowess, collaborative nature, and enthusiasm for staying at the forefront of the field make him a valuable asset to any software development project. I wholeheartedly recommend Taiwo to anyone in need of a software engineer who can bring both expertise and a positive attitude to the team. 🙌`,
   },
   {
     avatar: AVTR2,
@@ -30,7 +29,7 @@ const data = [
     
     I'd recommend working with Enoch.
     
-    He's going to make things happen, never been so sure of someone. I hope he finds a matching organization that will put his fertile skills to use.`
+    He's going to make things happen, never been so sure of someone. I hope he finds a matching organization that will put his fertile skills to use.`,
   },
   {
     avatar: AVTR3,
@@ -39,7 +38,7 @@ const data = [
 
     One thing that amaze me was Taiwo's ability to take on challenges and find innovative solutions.
     
-    Overall, I am confident that Taiwo would make an excellent addition to any development team, his technical skills, collaborative abilities, and problem-solving mindset would be an asset to any organization. I wholeheartedly recommend Taiwo for any opportunities in full-stack development.`
+    Overall, I am confident that Taiwo would make an excellent addition to any development team, his technical skills, collaborative abilities, and problem-solving mindset would be an asset to any organization. I wholeheartedly recommend Taiwo for any opportunities in full-stack development.`,
   },
   {
     avatar: AVTR4,
@@ -48,42 +47,38 @@ const data = [
 
     He is also a good collaborator and team player with both technical and professional skills. His problem-solving skill is on the high level. We built group a project in Microverse and he was a very effective teammate.
     
-    I recommend Enoch not only because he is a good friend of mine, but for the amazing skills that he possesses.`
-  }
-]
+    I recommend Enoch not only because he is a good friend of mine, but for the amazing skills that he possesses.`,
+  },
+];
 
-const Testimonials = () => {
-  return (
-    <section id="testimony">
-      <h5>Review from some Coding Partners</h5>
-      <h2>Recommendations</h2>
+const Testimonials = () => (
+  <section id="testimony">
+    <h5>Review from some Coding Partners</h5>
+    <h2>Recommendations</h2>
 
-      <Swiper className="container testimonials__container"
-        modules={[Pagination]}
-        spaceBetween={40}
-        slidesPerView={1}
+    <Swiper
+      className="container testimonials__container"
+      modules={[Pagination]}
+      spaceBetween={40}
+      slidesPerView={1}
         // navigation
-        pagination={{ clickable: true }}
-      >
-        {
-          data.map(({avatar, name, review}, index) => {
-            return (
-              <SwiperSlide key={index} className="testimonial">
-                <div className="client__avatar">
-                  <img src={avatar} alt="Avatar One" />
-                  
-                </div>
-                <h5 className="client__name">{name}</h5>
-                <small className="client__review">{review}</small>
-              </SwiperSlide>
-            )
-          })
+      pagination={{ clickable: true }}
+    >
+      {
+          data.map(({ avatar, name, review }, index) => (
+            <SwiperSlide key={index} className="testimonial">
+              <div className="client__avatar">
+                <img src={avatar} alt="Avatar One" />
+
+              </div>
+              <h5 className="client__name">{name}</h5>
+              <small className="client__review">{review}</small>
+            </SwiperSlide>
+          ))
         }
-        
-      </Swiper>
-    </section>
-  )
-}
 
-export default Testimonials
+    </Swiper>
+  </section>
+);
 
+export default Testimonials;

@@ -1,55 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './nav.css';
-import {AiOutlineHome} from 'react-icons/ai';
-import {AiOutlineUserSwitch} from 'react-icons/ai';
-import {BiBook} from 'react-icons/bi';
-import {RiServiceLine} from 'react-icons/ri';
-import {BiMessageDetail} from 'react-icons/bi';
-import {useState} from 'react';
+import { AiOutlineHome, AiOutlineUserSwitch } from 'react-icons/ai';
+import { BiBook, BiMessageDetail } from 'react-icons/bi';
+import { RiServiceLine } from 'react-icons/ri';
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+  const [activeNav, setActiveNav] = useState('#');
 
   return (
     <nav>
-      <a 
-      href="#"
-      tooltip="Home"
-      onClick={() => setActiveNav('#')}
-      className={activeNav === '#' ? 'active' : ''}
+      <a
+        href="#"
+        onClick={() => setActiveNav('#')}
+        className={activeNav === '#' ? 'active' : ''}
       >
-      <AiOutlineHome />
+        <AiOutlineHome />
       </a>
-      <a 
-      href="#about" 
-      onClick={() => setActiveNav('#about')}
-      className={activeNav === '#about' ? 'active' : ''}
+      <a
+        href="#about"
+        onClick={() => setActiveNav('#about')}
+        className={activeNav === '#about' ? 'active' : ''}
       >
-      <AiOutlineUserSwitch />
+        <AiOutlineUserSwitch />
       </a>
-      <a 
-      href="#experience"
-      onClick={() => setActiveNav('#experience')}
-      className={activeNav === '#experience' ? 'active' : ''}
+      <a
+        href="#experience"
+        onClick={() => setActiveNav('#experience')}
+        className={activeNav === '#experience' ? 'active' : ''}
       >
-      <BiBook />
+        <BiBook />
       </a>
-      <a 
-      href="#portfolio"
-      onClick={() => setActiveNav('#portfolio')}
-      className={activeNav === '#portfolio' ? 'active' : ''}
+      <a
+        href="#portfolio"
+        onClick={() => setActiveNav('#portfolio')}
+        className={activeNav === '#portfolio' ? 'active' : ''}
       >
-      <RiServiceLine />
+        <RiServiceLine />
       </a>
-      <a 
-      href="#contact"
-      onClick={() => setActiveNav('#contact')}
-      className={activeNav === '#contact' ? 'active' : ''}
+      <a
+        href="#contact"
+        onClick={() => setActiveNav('#contact')}
+        className={activeNav === '#contact' ? 'active' : ''}
       >
-      <BiMessageDetail />
+        <BiMessageDetail />
       </a>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

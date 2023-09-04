@@ -1,5 +1,4 @@
-.container
-.testimonials__container {
+.container .testimonials__container {
   width: 40%;
   padding-bottom: 4rem;
 }
@@ -29,16 +28,13 @@
   margin: 0.8rem auto 0;
 }
 
-.swiper-pagination-clickable
-.swiper-pagination-bullet-active {
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
   background: var(--color-primary-variant);
 }
 
-
 /* *************** Media Queries (Medium Devices) ************ */
 @media screen and (max-width: 1024px) {
-  .container
-  .testimonials__container {
+  .container .testimonials__container {
     width: 60%;
   }
 
@@ -50,8 +46,7 @@
 
 /* *************** Media Queries (Medium Devices) ************ */
 @media screen and (max-width: 600px) {
-  .container
-  .testimonials__container {
+  .container .testimonials__container {
     width: var(--container-width-sm);
   }
 

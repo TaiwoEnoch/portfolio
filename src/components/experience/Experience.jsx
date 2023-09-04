@@ -190,84 +190,72 @@ const Experience = () => {
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Problem Solving</h4>
-                {/* <small className="text-light">Experinced</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Communication</h4>
-                {/* <small className="text-light">Experinced</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Continuous Learning</h4>
-                {/* <small className="text-light">Experinced</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
-                <h4>Git</h4>
-                {/* <small className="text-light">Basic</small> */}
+                <h4>Attention to details</h4>
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>GitHub</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>GitHub CLI</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>GitLab</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Mentorship</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Creative Thinker</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Team Player</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Remote work experience</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
             <article className="experience__details">
               <BiSolidBadgeCheck className="experience__details-icon" />
               <div>
                 <h4>Remote Collaboration</h4>
-                {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
           </div>

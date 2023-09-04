@@ -120,12 +120,6 @@
   }
 }
 
-/* @media screen and (max-width: 820px) {
-  .responsive {
-    padding-top: 10rem;
-  }
-} */
-
 @media screen and (max-width: 912px) {
   .responsive {
     padding-top: 10rem;

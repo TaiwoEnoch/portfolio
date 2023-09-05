@@ -28,13 +28,16 @@ const About = () => (
           </article>
         </div>
         <p>
-          Hi, I'm Taiwo Enoch, a skilled software developer specializing in Ruby, JavaScript, React, and Ruby on Rails. With 2 years worth of experience in 1 year,I excel in building robust web applications.
+          Hi&apos; I'm Taiwo Enoch&apos; a skilled software developer specializing in Ruby&apos; JavaScript&apos; React&apos; and Ruby on Rails.
+          With 2 years worth of experience in 1 year&apos; I excel in building robust web applications.
 
-          I thrive in collaborative environments, utilizing strong communication skills to deliver exceptional results. Proficient in backend development with Ruby, I also create captivating user interfaces using JavaScript and React. I am well-versed in the entire development lifecycle, from conceptualization to deployment.
+          I thrive in collaborative environments&apos; utilizing strong communication skills to deliver exceptional results.
+          Proficient in backend development with Ruby&apos; I also create captivating user interfaces using JavaScript and React. I am well-versed in the entire development lifecycle&apos; from conceptualization to deployment.
 
-          I prioritize clean and maintainable code, following best practices and test-driven development. I am adaptable and embrace agile methodologies to meet changing requirements and deliver high-quality software.
+          I prioritize clean and maintainable code&apos; following best practices and test-driven development.
+          I am adaptable and embrace agile methodologies to meet changing requirements and deliver high-quality software.
 
-          When I'm not coding, I'm picking up concepts about design and Data Structures, or you could check for me at The Emirate Stadium. I am probably enjoying Football in England. 🤓
+          When I'm not coding&apos; I'm picking up concepts about design and Data Structures&apos; or you could check for me at The Emirate Stadium. I am probably enjoying Football in England. 🤓
         </p>
 
         <a href="#contact" className="btn btn-primary">Let's Talk</a>

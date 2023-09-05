@@ -174,7 +174,7 @@ const Experience = () => (
           <article className="experience__details">
             <BiSolidBadgeCheck className="experience__details-icon" />
             <div>
-              <h4>REST API's</h4>
+              <h4>REST API&apos;s</h4>
               <small className="text-light">Experienced</small>
             </div>
           </article>

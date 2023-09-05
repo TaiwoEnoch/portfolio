@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5bdf13bd.css",
+    "main.js": "/static/js/main.cd8d3aac.js",
+    "static/media/crypto.png": "/static/media/crypto.1b8f53941fb419f030d2.png",
+    "static/media/ecome.png": "/static/media/ecome.b29f83aca37ced850c6d.png",
+    "static/media/appoint.png": "/static/media/appoint.bf396a7fcdd1695006bd.png",
+    "static/media/space.png": "/static/media/space.793ab88dc29ca78ce6af.png",
+    "static/media/tracker.png": "/static/media/tracker.1fcfa687c788561edb89.png",
+    "static/media/AVATAR.png": "/static/media/AVATAR.5e2d28c1f3a7fa8772d7.png",
+    "static/media/main.png": "/static/media/main.a03a2fce2a01af7901ad.png",
+    "static/media/FullstackCV.pdf": "/static/media/FullstackCV.938af1e3871593e20427.pdf",
+    "static/media/maths.png": "/static/media/maths.09cd53fa81da238c172c.png",
+    "static/media/EDAVT.jpg": "/static/media/EDAVT.f75830eae126752d7b61.jpg",
+    "static/media/OlAVT.jpg": "/static/media/OlAVT.7511e44ec49db451f8cd.jpg",
+    "index.html": "/index.html",
+    "main.5bdf13bd.css.map": "/static/css/main.5bdf13bd.css.map",
+    "main.cd8d3aac.js.map": "/static/js/main.cd8d3aac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bdf13bd.css",
+    "static/js/main.cd8d3aac.js"
+  ]
+}

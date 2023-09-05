@@ -5,7 +5,7 @@ import HeaderSocials from './HeaderSocials';
 import './header.css';
 
 const Header = () => (
-  <header>
+  <header id='header'>
     <div className="container header_container">
       <h5 className="big">Hi&apos; I'm</h5>
       <h1>Taiwo Enoch</h1>

@@ -25,6 +25,8 @@
 .contact__option:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
+  transform: translateY(-10px); /* Add a subtle upward translation on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
 }
 
 @media screen and (max-width: 1024px) {

@@ -9,7 +9,7 @@ import AVTR4 from '../../assets/DIAVT.jpg';
 
 // import Swiper core and required modules
 
-// Import Swiper styles
+// Import all Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 

@@ -1,17 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './testimonials.css';
-import { Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import AVTR1 from '../../assets/RitAVT1.jpg';
 import AVTR2 from '../../assets/OlAVT.jpg';
 import AVTR3 from '../../assets/EDAVT.jpg';
 import AVTR4 from '../../assets/DIAVT.jpg';
 
-// import Swiper core and required modules
-
-// Import all Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
 
 const data = [
   {
@@ -51,34 +45,52 @@ const data = [
   },
 ];
 
-const Testimonials = () => (
-  <section id="testimony">
-    <h5>Review from some Coding Partners</h5>
-    <h2>Recommendations</h2>
+const Testimonials = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-    <Swiper
-      className="container testimonials__container"
-      modules={[Pagination]}
-      spaceBetween={40}
-      slidesPerView={1}
-        // navigation
-      pagination={{ clickable: true }}
-    >
-      {
-          data.map(({ avatar, name, review }, index) => (
-            <SwiperSlide key={index} className="testimonial">
-              <div className="client__avatar">
-                <img src={avatar} alt="Avatar One" />
+  const goToTestimonial = (index) => {
+    setCurrentTestimonial(index);
+  };
 
-              </div>
-              <h5 className="client__name">{name}</h5>
-              <small className="client__review">{review}</small>
-            </SwiperSlide>
-          ))
-        }
+  // const nextTestimonial = () => {
+  //   setCurrentTestimonial((prev) => (prev + 1) % data.length);
+  // };
 
-    </Swiper>
-  </section>
-);
+  // const prevTestimonial = () => {
+  //   setCurrentTestimonial((prev) => (prev - 1 + data.length) % data.length);
+  // };
+
+  return (
+    <section className="testimonials-section">
+      <h5>Review from some Coding Partners</h5>
+      <h2>Recommendations</h2>
+
+      <div className="testimonials-container">
+        <div className="testimonial">
+          <div className="client-avatar">
+            <img src={data[currentTestimonial].avatar} alt="Avatar One" />
+          </div>
+          <h5 className="client-name">{data[currentTestimonial].name}</h5>
+          <p className="client-review">{data[currentTestimonial].review}</p>
+        </div>
+
+        <div className="testimonial-pagination">
+          {data.map((_, index) => (
+            <button
+              key={index}
+              className={index === currentTestimonial ? 'active' : ''}
+              onClick={() => goToTestimonial(index)}
+            />
+          ))}
+        </div>
+
+        {/* <div className="testimonial-navigation">
+          <button onClick={prevTestimonial}>&#8249;</button>
+          <button onClick={nextTestimonial}>&#8250;</button>
+        </div> */}
+      </div>
+    </section>
+  );
+};
 
 export default Testimonials;

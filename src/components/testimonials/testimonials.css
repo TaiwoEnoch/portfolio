@@ -1,57 +1,72 @@
-.container .testimonials__container {
-  width: 40%;
-  padding-bottom: 4rem;
+/* Testimonials.css */
+
+.testimonials-section {
+  text-align: center;
+  padding: 40px 0;
 }
 
-.client__avatar {
-  width: 4rem;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  border: 0.4rem solid var(--color-primary-variant);
+.testimonials-container {
+  position: relative;
 }
 
 .testimonial {
-  background: var(--color-bg-variant);
-  text-align: center;
-  padding: 2rem;
-  border-radius: 2rem;
-  user-select: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
 
-.client__review {
-  color: var(--color-light);
-  font-weight: 300;
-  display: block;
-  width: 80%;
-  margin: 0.8rem auto 0;
+.client-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet-active {
-  background: var(--color-primary-variant);
+.client-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-/* *************** Media Queries (Medium Devices) ************ */
-@media screen and (max-width: 1024px) {
-  .container .testimonials__container {
-    width: 60%;
-  }
-
-  .client__review {
-    width: var(--container-width-sm);
-    font-size: 1.4rem;
-  }
+.client-review {
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
-/* *************** Media Queries (Medium Devices) ************ */
-@media screen and (max-width: 600px) {
-  .container .testimonials__container {
-    width: var(--container-width-sm);
-  }
+.testimonial-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-  .client__review {
-    width: var(--container-width-sm);
-    font-size: 1rem;
-  }
+.testimonial-pagination button {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.testimonial-pagination button.active {
+  background-color: #4dfb08;
+}
+
+.testimonial-navigation {
+  margin-top: 20px;
+}
+
+.testimonial-navigation button {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
 }
